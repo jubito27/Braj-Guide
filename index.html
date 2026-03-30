@@ -20,6 +20,59 @@
         opacity: 0;
       }
     }
+
+    .register{
+      background: linear-gradient(45deg, #ff7a18, #ffb200 40%, #ff9a00);
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 12px;
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+      cursor: pointer;
+      box-shadow: 0 6px 18px rgba(255, 134, 35, 0.35), 0 0 0 0 rgba(255, 153, 51, 0.5);
+      transition: transform 0.35s cubic-bezier(.25,.8,.25,1), box-shadow 0.35s ease, background 0.45s ease;
+      position: relative;
+      overflow: hidden;
+      animation: pulse-shadow 2.5s ease-in-out infinite;
+    }
+
+    .register::before {
+      content: '';
+      position: absolute;
+      left: -25%;
+      top: -25%;
+      width: 150%;
+      height: 150%;
+      background: radial-gradient(circle at center, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0) 58%);
+      opacity: 0;
+      transform: translate3d(-100%, -100%, 0) rotate(45deg);
+      transition: transform 0.7s ease, opacity 0.7s ease;
+    }
+
+    .register:hover {
+      transform: translateY(-3px) scale(1.02);
+      box-shadow: 0 10px 20px rgba(255, 134, 35, 0.45), 0 0 14px rgba(255, 176, 65, 0.5);
+      background: linear-gradient(45deg, #ff9416, #ffc043 40%, #ffb94a);
+    }
+
+    .register:hover::before {
+      opacity: 1;
+      transform: translate3d(0, 0, 0) rotate(45deg);
+    }
+
+    .register:active {
+      transform: translateY(-1px) scale(0.98);
+      box-shadow: 0 4px 10px rgba(255, 134, 35, 0.25), 0 0 10px rgba(255, 176, 65, 0.35);
+    }
+
+    @keyframes pulse-shadow {
+      0%, 100% { box-shadow: 0 6px 18px rgba(255, 134, 35, 0.35), 0 0 0 0 rgba(255, 153, 51, 0.5); }
+      50% { box-shadow: 0 10px 25px rgba(255, 154, 50, 0.45), 0 0 8px rgba(255, 176, 65, 0.6); }
+    }
+
   </style>
 </head>
 
@@ -51,14 +104,12 @@
     <!-- WhatsApp Button + Mobile Toggle -->
     <div class="flex items-center space-x-4">
       <!-- WhatsApp Contact -->
-      <a href="https://wa.me/917310704467" target="_blank"
+      <!-- <a href="https://wa.me/917310704467" target="_blank"
          class="bg-green-600 hover:bg-green-700 text-white px-3 py-2 rounded-full flex items-center space-x-2 text-sm">
-        <!-- WhatsApp Icon -->
         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
           <path d="M20.52 3.48A12 12 0 0 0 3.48 20.52L2 24l3.52-1.48A12 12 0 0 0 24 12a11.96 11.96 0 0 0-3.48-8.52zM12 21c-1.63 0-3.2-.33-4.65-.95l-.33-.14-2.7 1.13.51-2.85-.2-.3A8.95 8.95 0 0 1 3 12a9 9 0 1 1 9 9zm4.2-6.3c-.23-.12-1.35-.66-1.56-.74-.2-.07-.34-.12-.48.12s-.56.74-.69.9c-.13.15-.25.17-.48.06a7.38 7.38 0 0 1-2.2-1.35 8.18 8.18 0 0 1-1.5-1.86c-.16-.28-.02-.43.12-.56.12-.12.28-.3.42-.45.14-.16.18-.28.27-.47.09-.18.04-.34-.02-.47-.07-.12-.48-1.16-.66-1.6-.17-.42-.35-.36-.48-.37H8c-.15 0-.37.05-.57.28-.2.22-.77.76-.77 1.84s.79 2.14.9 2.28c.11.15 1.56 2.38 3.77 3.34.53.23.94.37 1.27.48.53.17 1.02.15 1.4.09.43-.07 1.35-.55 1.54-1.08.18-.53.18-.98.13-1.08-.05-.1-.2-.15-.43-.27z"/>
-        </svg>
-        <span>WhatsApp</span>
-      </a>
+        </svg> -->
+      <button class="register" onclick="window.location.href='registeration.html'">Book Guide</button>
 
       <!-- Mobile Menu Button -->
       <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BrijGuide Admin Panel</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background: #fcf8f0; padding: 20px; }
+        h2 { color: #8B4513; text-align: center; border-bottom: 3px solid #FF9933; display: inline-block; padding-bottom: 10px; width: 100%; }
+        .table-container { overflow-x: auto; margin-top: 20px; background: white; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        table { width: 100%; border-collapse: collapse; min-width: 1000px; }
+        th { background: #FF9933; color: white; padding: 15px; text-align: left; }
+        td { padding: 12px; border-bottom: 1px solid #eee; font-size: 14px; }
+        tr:hover { background-color: #fff9f0; }
+        .refresh-btn { background: #8B4513; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; float: right; margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+
+    <h2>BrijGuide - All Registrations</h2>
+    <button class="refresh-btn" onclick="loadData()">Refresh List</button>
+
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Phone</th>
+                    <th>City</th>
+                    <th>Visit Date</th>
+                    <th>Members</th>
+                    <th>Days</th>
+                    <th>Places Interested</th>
+                </tr>
+            </thead>
+            <tbody id="userTableBody">
+                </tbody>
+        </table>
+    </div>
+
+    <script>
+        async function loadData() {
+            try {
+                const response = await fetch('http://10.200.105.114:3526/braj_user/');
+                const data = await response.json();
+                
+                const tableBody = document.getElementById('userTableBody');
+                tableBody.innerHTML = ''; // Purana data clear karein
+
+                data.forEach(user => {
+                    tableBody.innerHTML += `
+                        <tr>
+                            <td>${user.id}</td>
+                            <td><b>${user.name}</b><br><small>${user.email}</small></td>
+                            <td>${user.phone}</td>
+                            <td>${user.city || '-'}</td>
+                            <td>${user.visit_date || '-'}</td>
+                            <td>${user.members || '1'}</td>
+                            <td>${user.days || '-'}</td>
+                            <td>${user.places || 'N/A'}</td>
+                        </tr>
+                    `;
+                });
+            } catch (err) {
+                alert("Error loading data!");
+            }
+        }
+
+        // Page load hote hi data fetch karein
+        window.onload = loadData;
+    </script>
+</body>
+</html>
