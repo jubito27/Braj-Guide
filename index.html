@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Title & Meta Description -->
+  <title>Barsana Guide | Your Complete Guidance in Barsana</title>
+  <meta name="description" content="Barsana Guide - Explore Barsana, Barsana temples, Vrindavan, Govardhan, Mathura and other divine places of Braj with live darshan."> 
+
+  <!-- Comprehensive Favicon Setup -->
+  <link rel="icon" href="images/barsanaguidelogo.png" type="image/png">
+  <!-- Standard sizes -->
+  <link rel="icon" type="image/png" sizes="16x16" href="images/barsanaguidelogo.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/barsanaguidelogo.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="images/barsanaguidelogo.png">
+  <!-- Apple touch icon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="images/barsanaguidelogo.png">
+  <!-- Android Chrome -->
+  <link rel="icon" type="image/png" sizes="192x192" href="images/barsanaguidelogo.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="images/barsanaguidelogo.png">
+  <!-- Microsoft Tiles -->
+  <meta name="msapplication-TileImage" content="images/barsanaguidelogo.png">
+  <meta name="msapplication-TileColor" content="#4c1587">
+  <meta name="theme-color" content="#4c1587">
+  
+  <!-- Web App Manifest -->
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Blinking Effect -->
+  <style>
+    .blink {
+      animation: blink 1s infinite;
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+  </style>
+
+  <!-- Structured Data (Google Logo in Search Results) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "url": "https://brajguide.in/",
+    "logo": "https://brajguide.in/images/barsanaguidelogo.png",
+    "name": "Barsana Guide"
+  }
+  </script>
+</head>
+
+<body class="bg-white text-gray-800 font-sans">
+<!-- Header -->
+<header class="fixed top-0 left-0 w-full z-50 bg-white/10 backdrop-blur-md">
+  <!-- Container -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
+    
+    <!-- Logo and Site Title -->
+    <div class="flex items-center space-x-3">
+      <img src="images/barsanalogo.png" alt="Braj Guide Logo" class="h-16 w-16 object-contain" />
+      <div class="text-white">
+        <span class="block text-xl sm:text-2xl font-bold">Barsana Guide</span>
+        <span class="text-sm text-gray-200">बरसाना दर्शन सहयोग</span>
+      </div>
+    </div>
+
+    <!-- Desktop Navigation -->
+    <nav class="hidden md:flex space-x-6 text-white text-sm font-medium">
+      <a href="/" class="hover:text-yellow-300 transition">Home</a>
+      <a href="aboutme.html" class="hover:text-yellow-300 transition">About Me</a>
+      <a href="live3.html" class="hover:text-yellow-300 transition">Live Darshan</a>
+      <a href="#divine-places" class="hover:text-yellow-300 transition">Divine Places</a>
+      <a href="#contact" class="hover:text-yellow-300 transition">Contact</a>
+    </nav>
+
+    <!-- WhatsApp Button + Mobile Toggle -->
+    <div class="flex items-center space-x-4">
+      <!-- WhatsApp Contact -->
+      <a href="https://wa.me/917310704467" target="_blank"
+         class="bg-green-600 hover:bg-green-700 text-white px-3 py-2 rounded-full flex items-center space-x-2 text-sm">
+        <!-- WhatsApp Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M20.52 3.48A12 12 0 0 0 3.48 20.52L2 24l3.52-1.48A12 12 0 0 0 24 12a11.96 11.96 0 0 0-3.48-8.52zM12 21c-1.63 0-3.2-.33-4.65-.95l-.33-.14-2.7 1.13.51-2.85-.2-.3A8.95 8.95 0 0 1 3 12a9 9 0 1 1 9 9zm4.2-6.3c-.23-.12-1.35-.66-1.56-.74-.2-.07-.34-.12-.48.12s-.56.74-.69.9c-.13.15-.25.17-.48.06a7.38 7.38 0 0 1-2.2-1.35 8.18 8.18 0 0 1-1.5-1.86c-.16-.28-.02-.43.12-.56.12-.12.28-.3.42-.45.14-.16.18-.28.27-.47.09-.18.04-.34-.02-.47-.07-.12-.48-1.16-.66-1.6-.17-.42-.35-.36-.48-.37H8c-.15 0-.37.05-.57.28-.2.22-.77.76-.77 1.84s.79 2.14.9 2.28c.11.15 1.56 2.38 3.77 3.34.53.23.94.37 1.27.48.53.17 1.02.15 1.4.09.43-.07 1.35-.55 1.54-1.08.18-.53.18-.98.13-1.08-.05-.1-.2-.15-.43-.27z"/>
+        </svg>
+        <span>WhatsApp</span>
+      </a>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu Dropdown -->
+  <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 bg-black bg-opacity-80 text-white">
+    <a href="/" class="block py-2 hover:text-yellow-300">Home</a>
+    <a href="/about" class="block py-2 hover:text-yellow-300">About Me</a>
+    <a href="#darshan" class="block py-2 hover:text-yellow-300">Live Darshan</a>
+    <a href="#divine-places" class="block py-2 hover:text-yellow-300">Divine Places</a>
+    <a href="#contact" class="block py-2 hover:text-yellow-300">Contact</a>
+  </div>
+</header>
+
+<!-- Mobile Menu Toggle Script -->
+<script>
+  document.getElementById('mobile-menu-button').addEventListener('click', () => {
+    document.getElementById('mobile-menu').classList.toggle('hidden');
+  });
+</script>
+
+<!-- Hero Section Start -->
+<section class="relative bg-cover bg-center bg-no-repeat min-h-[460px] md:min-h-[600px] lg:min-h-[700px] flex items-center justify-center"
+         style="background-image: url('images/hero img.jpg');">
+
+  <!-- Dark Overlay -->
+  <div class="absolute inset-0 bg-black bg-opacity-60 pt-20"></div>
+
+  <!-- Main Content -->
+  <div class="relative z-10 flex flex-col justify-between items-center text-center px-4 sm:px-6 lg:px-8 max-w-4xl text-white w-full h-full">
+
+    <!-- Headings + Buttons  ब्रज धाम की दिव्यता में आपका स्वागत है Explore Braj with Braj guide-->
+    <div class="mt-24 md:mt-7" style="line-height: 1.6;">
+
+      <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-wide leading-normal drop-shadow-lg">
+        Explore Barsana spretuality with <br> Barsana Guide <br> <br>
+
+        <span class="text-yellow-300"> राधा रानी की जन्मभूमि बरसाना धाम में आपका स्वागत है </span>
+      </h1>
+
+      <p class="mt-5 text-base sm:text-lg md:text-xl font-medium drop-shadow-sm">
+        Radha rani mandir • Gehvarvan • Priyakund • Radha Krishna Vivah Sthal • Sankrikhor
+      </p>
+
+      <!-- CTA Buttons -->
+      <div class="mt-10 mb-0 flex justify-center flex-wrap gap-4">
+        <a href="aboutme.html" class="bg-yellow-300 text-black font-semibold px-5 py-2 rounded-full hover:bg-yellow-400 transition">
+          About Me
+        </a>
+        <a href="live3.html" class="bg-white text-black font-semibold px-5 py-2 rounded-full hover:bg-gray-200 transition animate-pulse">
+          🔴 Live Darshan <br>
+        </a> <br>
+      </div>
+    </div>
+
+    <!-- Logo at Bottom -->
+   <!-- Logo at Bottom (Reduced Padding/Margin) -->
+<div class="mt-5 mb-0">
+  <img src="images/barsanalogo.png" alt="Braj Guide Logo" class="mx-auto w-40 h-40 md:w-40 md:h-40 rounded-full">
+</div>
+
+  </div>
+</section>
+<!-- Hero Section End -->
+
+
+
+
+<!-- 🌸 Divine Doha Section -->
+<section class="bg-gradient-to-r from-[#fbeec1] to-[#fdeedc] py-3 md:py-5 px-2 md:px-4 text-center">
+  <div class="max-w-3xl mx-auto bg-white/80 border border-yellow-400 rounded-xl shadow-md p-3 md:p-5">
+    <h2 style="font-family: 'Tiro Devanagari Hindi', serif;"
+        class="text-lg sm:text-xl md:text-3xl text-[#a8327e] font-semibold leading-snug drop-shadow-md">
+      राधा राधा रटत ही, सब ब्याधा मिट जाय <br />
+      कोटि जन्म की आपदा, श्रीराधा नाम ते जाय ॥
+    </h2>
+    <div class="mt-3 h-1 w-16 md:w-20 bg-yellow-500 mx-auto rounded-full"></div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- About Me Section -->
+<!-- About Me Section with Name as Heading -->
+<section id="about" style="background: linear-gradient(to right, #fff3e0, #ffe4e1);" class="py-0 px-0">
+
+  <div class="max-w-8xl mx-auto flex flex-col-reverse md:flex-row items-center gap-12">
+
+    <!-- Left Side: Name and Intro Text -->
+    <div class="flex-1">
+      <!-- Your Name -->
+      <h2 class="text-[2rem] md:text-[2.5rem] font-bold text-[#6b3e26] ml-5 md:ml-10 mb-1" style="font-family: 'Segoe Script', cursive;">
+      राधे राधे!
+      </h2>
+
+      <!-- Your Intro -->
+      <p class="text-[1 rem] md:text-[1.3rem] text-[#4b2e1e] leading-normal font-medium ml-5 md:ml-11">
+         <span class="font-semibold text-[#6b3e26]"> </span>
+I am Chitranshu Sharma, a simple sevak born in the holy dust of Shridham Barsana. This is the same land where Shri Radha Rani appeared and gave the true definition of love and devotion to this universe. Born in a Brahmin family, I got the company of culture, Vedas, devotion, and service since childhood.
+
+Braj is not just a place for me, it is my life, my faith, and my service area. This feeling inspires me to offer the service of Braj Darshan, information about divine places, and especially Live Darshan to all you devotees.
+
+My aim is that those who are far away from Braj, they too can experience the dust, devotion, and leela of this place in their hearts.
+
+Jai Jai Shri Radhe!
+      </p>
+    </div>
+
+    <!-- Right Side: Circular Image -->
+    <div class="flex justify-center flex-1">
+      <div class="w-64 h-64 md:w-72 md:h-72 rounded-full overflow-hidden border-[6px] border-[#e0c7a4] shadow-2xl">
+        <img src="images/my photo.png" alt="Chitranshu Sharma"
+             class="w-full h-full object-cover" />
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- Services Section - Hidden on Phones, Visible on Laptops -->
+<!-- ✨ Services Section (New Design with Spiritual Background) -->
+<section class="hidden md:block relative py-20 px-6 bg-gradient-to-br from-white via-pink-50 to-pink-100" id="services">
+
+  <!-- Decorative Background Circles -->
+  <div class="absolute top-20 left-10 w-72 h-72 bg-pink-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse"></div>
+  <div class="absolute bottom-20 right-10 w-80 h-80 bg-yellow-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse"></div>
+
+  <!-- Content -->
+  <div class="relative max-w-6xl mx-auto text-center">
+    <!-- Heading -->
+    <h2 class="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-700 to-red-600 drop-shadow-lg mb-6">
+      Our Services / हमारी सेवाएं
+    </h2>
+    <p class="text-lg text-gray-700 mb-14 max-w-3xl mx-auto">
+      To make your journey in Braj spiritually fulfilling and comfortable, I offer the following:
+    </p>
+
+    <!-- Services Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+      
+      <!-- Guide Card -->
+      <div class="bg-white/90 backdrop-blur-md rounded-3xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2 duration-300 overflow-hidden">
+        <img src="images/guide1.jpg" alt="Guide" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-2xl font-bold text-pink-700">🌸 Guide</h3>
+          <p class="text-gray-600">Barsana, Vrindavan & more</p>
+        </div>
+      </div>
+
+      <!-- Hotel Card -->
+      <div class="bg-white/90 backdrop-blur-md rounded-3xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2 duration-300 overflow-hidden">
+        <img src="images/room.jpg" alt="Hotel" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-2xl font-bold text-pink-700">🏨 Hotel</h3>
+          <p class="text-gray-600">(Food & Accommodation)</p>
+        </div>
+      </div>
+
+      <!-- Taxi Card -->
+      <div class="bg-white/90 backdrop-blur-md rounded-3xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2 duration-300 overflow-hidden">
+        <img src="images/taxi.png" alt="Taxi Service" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h3 class="text-2xl font-bold text-pink-700">🚖 Taxi Service</h3>
+          <p class="text-gray-600">(According to passenger)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- 🌸 ब्रज के प्रमुख स्थल -->
+<!-- 🌸 ब्रज के प्रमुख स्थल | Responsive -->
+<section id="divine-places" class="w-full py-6 sm:py-10 px-3 sm:px-4 bg-gradient-to-b from-pink-100 to-yellow-50">
+  <div class="max-w-7xl mx-auto">
+
+    <!-- Main Heading -->
+    <h2 class="text-2xl sm:text-4xl font-extrabold text-center text-pink-800 mb-6 sm:mb-12 bg-white p-4 sm:p-6 rounded-3xl shadow-lg">
+      🌸 बरसाना के प्रमुख स्थल | Famous Places of Barsana
+    </h2>
+
+    <!-- Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+
+      <!-- Card 1 -->
+      <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all p-3 sm:p-5 text-center">
+        <img src="images/barsana mandir4.jpg" alt="Radha Rani Mandir" class="w-full h-36 sm:h-48 object-cover rounded-xl mb-3">
+        <h3 class="text-sm sm:text-lg font-bold text-pink-700">🛕 राधा रानी मंदिर</h3>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all p-3 sm:p-5 text-center">
+        <img src="images/man mandir.jpg" alt="Mangad" class="w-full h-36 sm:h-48 object-cover rounded-xl mb-3">
+        <h3 class="text-sm sm:text-lg font-bold text-pink-700">🌄 मानगढ़</h3>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all p-3 sm:p-5 text-center">
+        <img src="images/dangad002.png" alt="Dangad" class="w-full h-36 sm:h-48 object-cover rounded-xl mb-3">
+        <h3 class="text-sm sm:text-lg font-bold text-pink-700">🌿 दानगढ़</h3>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all p-3 sm:p-5 text-center">
+        <img src="images/vilas gad.jpeg" alt="Vilashgad" class="w-full h-36 sm:h-48 object-cover rounded-xl mb-3">
+        <h3 class="text-sm sm:text-lg font-bold text-pink-700">🌸 विलासगढ़</h3>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all p-3 sm:p-5 text-center">
+        <img src="images/morkuti - Copy.jpeg" alt="Morkuti" class="w-full h-36 sm:h-48 object-cover rounded-xl mb-3">
+        <h3 class="text-sm sm:text-lg font-bold text-pink-700">🏯 मोरकुटी</h3>
+      </div>
+      
+     <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all p-3 sm:p-5 text-center">
+        <img src="images/jaypur mandir.jpg" alt="Brashbhanu Gaushala" class="w-full h-36 sm:h-48 object-cover rounded-xl mb-3">
+        <h3 class="text-sm sm:text-lg font-bold text-pink-700">कुशल बिहारी जी मंदिर </h3>
+      </div>
+
+      <!-- Card - Chitra Sakhi Mandir -->
+<div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all p-3 sm:p-5 text-center">
+  <img src="images/chitra sakhi mandir.png" alt="Chitra Sakhi Mandir" class="w-full h-36 sm:h-48 object-cover rounded-xl mb-3">
+  <h3 class="text-sm sm:text-lg font-bold text-pink-700">🛕 चित्रा सखी मंदिर</h3>
+</div>
+
+
+
+      <!-- Card 6 -->
+      <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all p-3 sm:p-5 text-center">
+        <img src="images/gehvarkunf.jpg" alt="Gehvarvan" class="w-full h-36 sm:h-48 object-cover rounded-xl mb-3">
+        <h3 class="text-sm sm:text-lg font-bold text-pink-700">🌳 गहवरवन</h3>
+      </div>
+
+      <!-- Card 7 -->
+      <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all p-3 sm:p-5 text-center">
+        <img src="images/radha bagh.jpg" alt="Radha Bag" class="w-full h-36 sm:h-48 object-cover rounded-xl mb-3">
+        <h3 class="text-sm sm:text-lg font-bold text-pink-700">🏡 राधा बाग</h3>
+      </div>
+
+      <!-- Card 8 -->
+      <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all p-3 sm:p-5 text-center">
+        <img src="images/krishna bagh.png" alt="Krishna Bag" class="w-full h-36 sm:h-48 object-cover rounded-xl mb-3">
+        <h3 class="text-sm sm:text-lg font-bold text-pink-700">🌿 कृष्ण बाग</h3>
+      </div>
+
+      <!-- Card 9 -->
+      <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all p-3 sm:p-5 text-center">
+        <img src="images/priya kund.jpg" alt="Priyakund" class="w-full h-36 sm:h-48 object-cover rounded-xl mb-3">
+        <h3 class="text-sm sm:text-lg font-bold text-pink-700">💧 प्रियाकुंड</h3>
+      </div>
+
+      <!-- Card 10 -->
+      <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all p-3 sm:p-5 text-center">
+        <img src="images/sankri khor.jpg" alt="Sankri Khor" class="w-full h-36 sm:h-48 object-cover rounded-xl mb-3">
+        <h3 class="text-sm sm:text-lg font-bold text-pink-700">🏞️ साँकरी खोर</h3>
+      </div>
+
+      <!-- Card 11 -->
+      <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all p-3 sm:p-5 text-center">
+        <img src="images/108 kutiya.jpg" alt="108 Kutiya" class="w-full h-36 sm:h-48 object-cover rounded-xl mb-3">
+        <h3 class="text-sm sm:text-lg font-bold text-pink-700">🏚️ 108 कुटिया</h3>
+      </div>
+
+      <!-- Card 12 -->
+      <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all p-3 sm:p-5 text-center">
+        <img src="images/rangili gali.jpeg" alt="Rangili Gali" class="w-full h-36 sm:h-48 object-cover rounded-xl mb-3">
+        <h3 class="text-sm sm:text-lg font-bold text-pink-700">🎨 रंगीली गली</h3>
+      </div>
+
+      <!-- Card 13 -->
+      <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all p-3 sm:p-5 text-center">
+        <img src="images/vinod baba2.1.png" alt="Vinod Baba" class="w-full h-36 sm:h-48 object-cover rounded-xl mb-3">
+        <h3 class="text-sm sm:text-lg font-bold text-pink-700">🙏 विनोद बाबा</h3>
+      </div>
+
+      <!-- Card 14 -->
+      <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all p-3 sm:p-5 text-center">
+        <img src="images/brashbhanu gaushla.jpg" alt="Brashbhanu Gaushala" class="w-full h-36 sm:h-48 object-cover rounded-xl mb-3">
+        <h3 class="text-sm sm:text-lg font-bold text-pink-700">🐄 वृषभानु गौशाला</h3>
+      </div>
+
+      <!-- Card 15 -->
+      <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition-all p-3 sm:p-5 text-center">
+        <img src="images/ramesh baba gaushala.jpg" alt="Ramesh Baba Gaushala" class="w-full h-36 sm:h-48 object-cover rounded-xl mb-3">
+        <h3 class="text-sm sm:text-lg font-bold text-pink-700">🐄 रमेश बाबा गौशाला</h3>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    
+
+
+
+
+<!-- Live Darshan Blink Box -->
+<!-- Live Darshan + Info Split Section -->
+<section class="max-w-6xl mx-auto px-4 py-12">
+  <div class="flex flex-col md:flex-row gap-8">
+    <!-- Live Darshan Half -->
+    <div class="flex-1 border-2 border-green-500 rounded-xl p-6 text-center shadow-lg bg-green-50">
+      <h3 class="text-2xl font-bold text-green-700 blink">🔴 Live Darshan / लाइव दर्शन</h3>
+      <p class="mt-2 text-gray-700">यदि आप बरसाना  की दिव्य लीलाभूमियों के दर्शन करना चाहते हैं, परंतु स्वयं उपस्थित नहीं हो पा रहे हैं, तो मेरे द्वारा यह एक विनम्र सेवा है — आप घर बैठे भी राधा रानी जी के नित्य प्रति दर्शन कर सकें।</p>
+      <a href="https://wa.me/917310704467" target="_blank" class="inline-block mt-4 bg-green-500 text-white px-6 py-2 rounded-full shadow hover:bg-green-600">Message on WhatsApp</a>
+    </div>
+
+    <!-- Braj Guidance Half 
+    <div class="flex-1 border-2 border-indigo-400 rounded-xl p-6 text-center shadow-lg bg-indigo-50">
+      <h2 class="text-2xl font-bold text-indigo-800 mb-2">📘 Barsana Information & Guidance</h2>
+      <p class="text-gray-700">यदि आप बरसाना दर्शन करने आये हुए हैं या आने की योजना बना रहे हैं, तो मैं आपको मंदिर दर्शन, लीलास्थल भ्रमण और ठहरने की व्यवस्था में पूर्ण मार्गदर्शन व सहायता प्रदान करता हूँ। श्रद्धाभाव से जुड़कर आप मुझसे WhatsApp या phone कॉल के माध्यम से संपर्क कर सकते हैं। <br>
+      <a href="https://wa.me/917310704467" target="_blank" class="inline-block mt-4 bg-indigo-600 text-white px-6 py-2 rounded-full hover:bg-indigo-700">Contact Me on WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+ -->
+
+
+ <!-- Floating WhatsApp Icon -->
+<a href="https://wa.me/917310704467?text=Radhe%20Radhe%20Ji" target="_blank" title="Chat on WhatsApp"
+   class="fixed bottom-4 right-4 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg z-50">
+  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+    <path d="M12 0C5.37 0 0 5.37 0 12c0 2.11.55 4.08 1.51 5.8L0 24l6.34-1.66A11.94 11.94 0 0012 24c6.63 0 12-5.37 12-12S18.63 0 12 0zm5.44 17.33c-.23.65-1.35 1.23-1.9 1.3-.48.07-1.08.1-3.18-.66-2.67-1.05-4.38-3.8-4.52-3.97s-1.08-1.44-1.08-2.76.68-1.95.92-2.23c.23-.26.5-.33.66-.33s.33.01.47.01c.15 0 .35-.05.55.42.21.5.72 1.73.78 1.86.06.13.11.29.01.46-.1.17-.15.27-.3.42-.15.15-.3.33-.43.44-.15.12-.3.26-.13.52.17.27.75 1.24 1.61 2.01 1.1.98 2.02 1.28 2.3 1.42.28.15.44.13.61-.08.17-.2.7-.81.89-1.1.18-.29.37-.24.63-.14.26.09 1.65.78 1.93.92.29.14.48.21.55.33.07.13.07.75-.17 1.4z"/>
+  </svg>
+</a>
+
+<!-- 🌸 Beautiful Footer Start -->
+<footer style="background-color: #fff3e0; padding: 20px 0;">
+  <div style="display: flex; justify-content: center; align-items: center;">
+    <img src="images/Barsana guide footer.png" alt="Braj Guide Visiting Card"
+         style="width: 100%; max-width: 800px; height: auto; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+  </div>
+</footer>
+  <footer class="bg-gradient-to-r from-yellow-200 via-pink-200 to-white text-center py-6 mt-0">
+    <p class="text-[#6b3e26] font-semibold">© 2025 Braj Guide | सेवा में: चितरांशु शर्मा</p>
+  </footer>
+</html>
+</body>
+
+</html>
